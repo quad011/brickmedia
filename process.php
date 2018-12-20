@@ -4,7 +4,7 @@
     $from = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
     $name = $_REQUEST['name'];
-    $headers = "From: $from";
+    $headers = "From: Brick Media";
 
     $fields = array();
     $fields{"name"} = "name";

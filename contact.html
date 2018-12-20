@@ -29,6 +29,8 @@
 
   <link rel="icon" type="image/png" href="images/icons/favicon.png" />
 
+  <!-- <script src="js/validation.js"></script> -->
+
 </head>
 
 <body id="page-top">
@@ -118,11 +120,44 @@
       <div class="col-lg-12">
         <div class="contact-info item" data-aos="zoom-in">
           <div class="project-text w-100 my-auto text-center text-lg-center">
-            <h1 class="text-dark">Do you need more info? <br> Contact our team!</h1>
-            <p class="mb-0 text-white-50"><a href="mailto:seb@brickmedia.us">info@brickmedia.us</a></p>
+
+            <div class="contact-container">
+              <h1>Do you need more info? <br>
+                Contact our team!</h1>
+            </div>
+
+            <!-- contact form -->
+            <div class="contact-form">
+
+              <form action="process.php" id="contact-form" method="GET">
+                <div class="input-group name-email">
+                  <div class="input-field">
+                    <input type="text" name="name" id="name" placeholder="Name" class="form-control" required>
+                  </div>
+                  <div class="input-field">
+                    <input type="email" name="email" id="email" placeholder="Email" class="form-control" required>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" name="subject" id="subject" placeholder="Subject" class="form-control" required>
+                  </div>
+                </div>
+
+                <div class="input-group name-email">
+                  <div class="input-field">
+                    <textarea name="message" id="message" placeholder="Message" class="form-control" required></textarea>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input type="submit" id="form-submit" class="btn-yellow-more pull-right" value="SEND">
+                </div>
+              </form>
+
+            </div>
           </div>
+          <!-- end contact form -->
         </div>
       </div>
+    </div>
     </div>
 
   </section>
@@ -130,7 +165,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Design & Develop &copy; <a target="_blank" href="http://www.lightonly.rs/">LightOnly</a> 2018
+      Design & Develop &copy; Brick Media 2018
     </div>
   </footer>
 
